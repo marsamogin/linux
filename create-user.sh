@@ -1,5 +1,5 @@
 #!/bin/bash
-useradd -d /home/keite keite -p "trocar@1st"
+useradd -d /home/keite keite
 usermod -aG wheel keite
 mkdir /home/keite/.ssh
 touch /home/keite/.ssh/authorized_keys
