@@ -17,7 +17,7 @@ log=/tmp/backup.log # onde sera criado o log #
 listaBancos=/tmp/bancos.txt # Arquivos onde eh criada a lista com os bancos #
 hostName=`hostname` # Captura o nome do host #
 ## Configuracao Servidor MySQL ##
-mysqlUser="dti_bkp" # usuario do banco #
+mysqlUser="backup" # usuario do banco #
 mysqlPass="I8hErcT2ww39kA3lBq01" # senha do banco #
 mysqlHost="localhost" # host onde esta o banco #
 mysqlPort="3306" # porta de conexao do host remoto #
