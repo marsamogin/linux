@@ -23,3 +23,10 @@
 # O script abaixo verifica diariamente o espaco disponivel nos discos e envia email caso o uso esteja em 90% ou mais
 #
 0 6 * * * /root/shell/./monitor-disco.sh
+#
+# Executas rotinas diarias de backup
+#
+# -----------------------------------------------------------------------------------------------
+30 22 * * * /root/shell/./backup-mysql.sh >/tmp/log.backup-mysql 2>/tmp/erro.backup-mysql
+40 22 * * * /root/shell/./backup-mysql-all.sh >/tmp/log.backup-mysql-all 2>/tmp/erro.backup-mysql-all
+
