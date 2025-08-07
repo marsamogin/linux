@@ -18,7 +18,7 @@
 #
 # Roda o update do antivirus todos os dias as 23:00
 #
-0 23 * * * /usr/bin/freshclam
+#0 23 * * * /usr/bin/freshclam
 #
 # O script abaixo verifica diariamente o espaco disponivel nos discos e envia email caso o uso esteja em 90% ou mais
 #
@@ -27,6 +27,6 @@
 # Executas rotinas diarias de backup
 #
 # -----------------------------------------------------------------------------------------------
-30 22 * * * /root/shell/./backup-mysql.sh >/tmp/log.backup-mysql 2>/tmp/erro.backup-mysql
-40 22 * * * /root/shell/./backup-mysql-all.sh >/tmp/log.backup-mysql-all 2>/tmp/erro.backup-mysql-all
+#30 22 * * * /root/shell/./backup-mysql.sh >/tmp/log.backup-mysql 2>/tmp/erro.backup-mysql
+#40 22 * * * /root/shell/./backup-mysql-all.sh >/tmp/log.backup-mysql-all 2>/tmp/erro.backup-mysql-all
 
