@@ -29,4 +29,6 @@
 # -----------------------------------------------------------------------------------------------
 #30 22 * * * /root/shell/./backup-mysql.sh >/tmp/log.backup-mysql 2>/tmp/erro.backup-mysql
 #40 22 * * * /root/shell/./backup-mysql-all.sh >/tmp/log.backup-mysql-all 2>/tmp/erro.backup-mysql-all
-
+#
+# Limpa os registros de log do apache 1x ao mes
+0 2 1 * * /root/shell/./exclui-logs.sh
